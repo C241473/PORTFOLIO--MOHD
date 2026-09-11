@@ -104,7 +104,7 @@ export const AIChatWidget: React.FC = () => {
           aria-label="Open AI Assistant"
           className="group relative flex items-center gap-2.5 rounded-full border border-emerald-400/40 bg-paper/90 px-4 py-2.5 shadow-[0_0_25px_rgba(0,230,118,0.3)] backdrop-blur-xl transition-all duration-300 hover:scale-105 hover:border-emerald-400 hover:shadow-[0_0_35px_rgba(0,230,118,0.5)] cursor-pointer"
         >
-          <span className="relative flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-emerald-400 via-teal-500 to-amber-500 text-black text-sm font-bold shadow-md">
+          <span className="relative flex h-8 w-8 items-center justify-center rounded-full bg-linear-to-br from-emerald-400 via-teal-500 to-amber-500 text-black text-sm font-bold shadow-md">
             <Bot className="h-4 w-4 text-black" />
             <span className="absolute -top-0.5 -right-0.5 flex h-2.5 w-2.5">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
@@ -126,9 +126,9 @@ export const AIChatWidget: React.FC = () => {
 
       {/* AI Window */}
       {isOpen && (
-        <div className="fixed bottom-20 right-4 sm:right-6 z-50 w-[92vw] sm:w-[400px] h-[520px] max-h-[80vh] flex flex-col rounded-2xl border border-emerald-500/30 bg-paper/95 backdrop-blur-2xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] animate-in slide-in-from-bottom-5 duration-300 overflow-hidden">
+        <div className="fixed bottom-20 right-4 sm:right-6 z-50 w-[92vw] sm:w-100 h-130 max-h-[80vh] flex flex-col rounded-2xl border border-emerald-500/30 bg-paper/95 backdrop-blur-2xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] animate-in slide-in-from-bottom-5 duration-300 overflow-hidden">
           {/* Header */}
-          <div className="flex items-center justify-between border-b border-ink/15 px-4 py-3 bg-gradient-to-r from-emerald-500/10 via-amber-500/10 to-transparent">
+          <div className="flex items-center justify-between border-b border-ink/15 px-4 py-3 bg-linear-to-r from-emerald-500/10 via-amber-500/10 to-transparent">
             <div className="flex items-center gap-2.5">
               <div className="flex h-9 w-9 items-center justify-center rounded-full bg-emerald-400/20 text-emerald-400 border border-emerald-400/40">
                 <Sparkles className="h-4 w-4" />
@@ -169,7 +169,7 @@ export const AIChatWidget: React.FC = () => {
                 <div
                   className={`max-w-[80%] rounded-xl px-3.5 py-2.5 leading-relaxed shadow-sm ${
                     msg.sender === 'user'
-                      ? 'bg-gradient-to-r from-emerald-500 to-amber-500 text-black font-medium rounded-tr-none'
+                      ? 'bg-linear-to-r from-emerald-500 to-amber-500 text-black font-medium rounded-tr-none'
                       : 'bg-ink/5 border border-ink/10 text-ink rounded-tl-none'
                   }`}
                 >
@@ -223,7 +223,7 @@ export const AIChatWidget: React.FC = () => {
             <button
               type="submit"
               disabled={!inputMessage.trim()}
-              className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-r from-emerald-400 to-amber-500 text-black hover:opacity-90 disabled:opacity-40 transition-opacity cursor-pointer"
+              className="flex h-8 w-8 items-center justify-center rounded-lg bg-linear-to-r from-emerald-400 to-amber-500 text-black hover:opacity-90 disabled:opacity-40 transition-opacity cursor-pointer"
             >
               <Send className="h-4 w-4" />
             </button>

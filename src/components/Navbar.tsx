@@ -74,7 +74,7 @@ export const Navbar: React.FC<NavbarProps> = ({ isDark, onToggleTheme, activeSec
                     <span className={`text-[0.55rem] ${isActive ? 'text-emerald-400' : 'text-ink-muted/50'}`}>·</span>
                     {item.label}
                     {isActive && (
-                      <span className="absolute bottom-0 left-2 right-2 h-[2px] bg-emerald-400 rounded-full" />
+                      <span className="absolute bottom-0 left-2 right-2 h-0.5 bg-emerald-400 rounded-full" />
                     )}
                   </button>
                 </li>

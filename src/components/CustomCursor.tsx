@@ -90,7 +90,7 @@ export const CustomCursor: React.FC = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="pointer-events-none fixed inset-0 z-[9999] hidden lg:block overflow-hidden">
+    <div className="pointer-events-none fixed inset-0 z-9999 hidden lg:block overflow-hidden">
       {/* Outer Holographic Golden Orbit Ring */}
       <div
         ref={cursorRingRef}

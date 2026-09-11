@@ -30,8 +30,8 @@ export const Hero: React.FC<HeroProps> = ({ onNavigateContact }) => {
     <section id="home" className="relative mx-auto w-full max-w-6xl px-4 pt-28 pb-20 md:pt-40 md:pb-28">
       {/* Background ambient lighting glows */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute -left-20 -top-20 h-[450px] w-[450px] rounded-full bg-emerald-500/[0.08] blur-[100px] dark:bg-emerald-500/[0.12]" />
-        <div className="absolute -bottom-20 -right-20 h-[400px] w-[400px] rounded-full bg-amber-500/[0.05] blur-[120px] dark:bg-amber-500/[0.09]" />
+        <div className="absolute -left-20 -top-20 h-112.5 w-112.5 rounded-full bg-emerald-500/8 blur-[100px] dark:bg-emerald-500/12" />
+        <div className="absolute -bottom-20 -right-20 h-100 w-100 rounded-full bg-amber-500/5 blur-[120px] dark:bg-amber-500/9" />
       </div>
 
       {/* Top Editorial Label */}
@@ -54,7 +54,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigateContact }) => {
           </h1>
 
           {/* Accent Line */}
-          <div className="mt-6 h-[2px] w-28 bg-gradient-to-r from-emerald-400 via-amber-400 to-transparent" />
+          <div className="mt-6 h-0.5 w-28 bg-linear-to-r from-emerald-400 via-amber-400 to-transparent" />
 
           <p className="mt-7 max-w-xl text-base leading-relaxed text-ink-muted sm:text-lg">
             Dedicated undergraduate student of <strong className="text-ink font-semibold">English Language & Literature</strong> at IIUC with hands-on experience in <span className="text-emerald-400 font-medium">journalism (Staff Reporter)</span>, academic research, debate championships, and creative content writing.

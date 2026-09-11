@@ -101,7 +101,7 @@ export const Skills: React.FC = () => {
                   </div>
                   <div className="h-1.5 w-full bg-ink/10 rounded-full overflow-hidden">
                     <div
-                      className="h-full bg-gradient-to-r from-emerald-400 to-amber-400 transition-all duration-1000"
+                      className="h-full bg-linear-to-r from-emerald-400 to-amber-400 transition-all duration-1000"
                       style={{ width: `${s.level}%` }}
                     />
                   </div>
@@ -137,7 +137,7 @@ export const Skills: React.FC = () => {
                   </div>
                   <div className="h-1.5 w-full bg-ink/10 rounded-full overflow-hidden">
                     <div
-                      className="h-full bg-gradient-to-r from-emerald-400 to-amber-400 transition-all duration-1000"
+                      className="h-full bg-linear-to-r from-emerald-400 to-amber-400 transition-all duration-1000"
                       style={{ width: `${s.level}%` }}
                     />
                   </div>
@@ -173,7 +173,7 @@ export const Skills: React.FC = () => {
                   </div>
                   <div className="h-1.5 w-full bg-ink/10 rounded-full overflow-hidden">
                     <div
-                      className="h-full bg-gradient-to-r from-emerald-400 to-amber-400 transition-all duration-1000"
+                      className="h-full bg-linear-to-r from-emerald-400 to-amber-400 transition-all duration-1000"
                       style={{ width: `${s.level}%` }}
                     />
                   </div>

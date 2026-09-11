@@ -81,7 +81,7 @@ export function App() {
       {/* Editorial Grid Background */}
       <div 
         aria-hidden="true" 
-        className="pointer-events-none fixed inset-0 -z-10 bg-[linear-gradient(to_right,var(--line-color)_1px,transparent_1px),linear-gradient(to_bottom,var(--line-color)_1px,transparent_1px)] bg-[size:64px_64px] opacity-40 [mask-image:radial-gradient(ellipse_80%_80%_at_50%_30%,#000_40%,transparent_85%)]"
+        className="pointer-events-none fixed inset-0 -z-10 bg-[linear-gradient(to_right,var(--line-color)_1px,transparent_1px),linear-gradient(to_bottom,var(--line-color)_1px,transparent_1px)] bg-size-[64px_64px] opacity-40 mask-[radial-gradient(ellipse_80%_80%_at_50%_30%,#000_40%,transparent_85%)]"
       />
 
       {/* Navbar */}
