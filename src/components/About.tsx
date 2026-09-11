@@ -3,7 +3,7 @@ import { Newspaper, BookOpen, MessageSquare, Award } from 'lucide-react';
 
 export const About: React.FC = () => {
   const stats = [
-    { label: 'Academic Standing', value: '7th Sem', sub: 'BA (Hons) ELL at IIUC' },
+    { label: 'Academic Standing', value: '8th Sem', sub: 'BA (Hons) ELL at IIUC' },
     { label: 'Debate Champion', value: '01st', sub: 'Inter-Sem English Debate 2026' },
     { label: 'Published News', value: '100+', sub: 'Reports at Khabar 24 Ghonta' },
     { label: 'Cultural & Sports', value: '04+', sub: 'Recitation & Karate Medals' },

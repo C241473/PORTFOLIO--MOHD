@@ -87,7 +87,7 @@ export const Navbar: React.FC<NavbarProps> = ({ isDark, onToggleTheme, activeSec
           {/* Social Links & Theme Toggle */}
           <div className="flex items-center gap-1.5">
             <a
-              href="https://linkedin.com/in/tanzir-ahsan-007232390"
+              href="https://www.linkedin.com/in/mohd-tanzirul-ahsan-007232390/"
               target="_blank"
               rel="noopener noreferrer"
               title="LinkedIn"
@@ -174,7 +174,7 @@ export const Navbar: React.FC<NavbarProps> = ({ isDark, onToggleTheme, activeSec
 
           <div className="pt-6 border-t border-ink/15 flex flex-col gap-4">
             <div className="flex items-center justify-around">
-              <a href="https://linkedin.com/in/tanzir-ahsan-007232390" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 font-mono text-xs text-ink-muted hover:text-emerald-400">
+              <a href="https://www.linkedin.com/in/mohd-tanzirul-ahsan-007232390/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 font-mono text-xs text-ink-muted hover:text-emerald-400">
                 <LinkedinIcon className="h-4 w-4" /> LinkedIn
               </a>
               <a href="mailto:tanzirulahsan@gmail.com" className="flex items-center gap-1 font-mono text-xs text-ink-muted hover:text-emerald-400">

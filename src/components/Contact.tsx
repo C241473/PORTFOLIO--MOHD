@@ -218,7 +218,7 @@ export const Contact: React.FC = () => {
             {/* Social Links */}
             <div className="mt-6 pt-4 border-t border-ink/15">
               <a
-                href="https://linkedin.com/in/tanzir-ahsan-007232390"
+                href="https://www.linkedin.com/in/mohd-tanzirul-ahsan-007232390/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full flex items-center justify-center gap-2 border border-ink/20 py-2.5 font-mono text-xs uppercase tracking-wider text-ink hover:border-emerald-400 hover:text-emerald-400 transition-colors"
