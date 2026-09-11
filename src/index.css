@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --paper: #f2f7f5;
+    --ink: #071914;
+    --ink-muted: #4e665d;
+    --signal: #00a859;
+    --signal-gold: #d97706;
+    --signal-bright: #00e676;
+    --line-color: rgba(7, 25, 20, 0.07);
+  }
+
+  html.dark {
+    --paper: #051410;
+    --ink: #e8f5ef;
+    --ink-muted: #8aa69b;
+    --signal: #00e676;
+    --signal-gold: #f59e0b;
+    --signal-bright: #34d399;
+    --line-color: rgba(0, 230, 118, 0.08);
+  }
+
+  body {
+    background-color: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  @media (min-width: 1024px) {
+    body, a, button, input, textarea {
+      cursor: none !important;
+    }
+  }
+}
+
+.font-serif {
+  font-family: 'Newsreader', Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Custom Gazette & Editorial Rules */
+.editorial-grid {
+  background-image: 
+    linear-gradient(to right, var(--line-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--line-color) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.tracking-editorial {
+  letter-spacing: 0.22em;
+}
+
+.rule-strong {
+  background-color: var(--ink);
+  opacity: 0.2;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 230, 118, 0.25);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--signal);
+}
+
+/* Glowing Card Effect */
+.glow-card {
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glow-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px -12px rgba(0, 230, 118, 0.25), 0 0 20px rgba(245, 158, 11, 0.15);
+  border-color: rgba(0, 230, 118, 0.5);
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(5, 20, 16, 0.75);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
+html:not(.dark) .glass-panel {
+  background: rgba(242, 247, 245, 0.85);
+}
+
+/* Gold Emerald Text Gradient */
+.gradient-text-emerald {
+  background: linear-gradient(135deg, #00e676 0%, #34d399 50%, #f59e0b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Color utility aliases */
+.bg-paper {
+  background-color: var(--paper);
+}
+
+.text-ink {
+  color: var(--ink);
+}
+
+.text-ink-muted {
+  color: var(--ink-muted);
+}
+
+.text-signal {
+  color: var(--signal);
+}
+
+.bg-signal {
+  background-color: var(--signal);
+}
+
+.border-signal {
+  border-color: var(--signal);
+}
+
+/* Spin slow */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
