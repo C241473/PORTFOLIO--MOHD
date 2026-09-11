@@ -6,7 +6,7 @@ export const Education: React.FC = () => {
     {
       degree: 'BA (Honours) in English Language & Literature',
       institution: 'International Islamic University Chittagong (IIUC)',
-      period: 'Running (8th Semester)',
+      period: 'Running 8th Sem',
       score: 'CGPA: 2.739',
       badgeColor: 'text-emerald-400 border-emerald-400/40 bg-emerald-400/10',
       highlights: [

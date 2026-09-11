@@ -45,7 +45,7 @@ export const AIChatWidget: React.FC = () => {
     const q = query.toLowerCase();
 
     if (q.includes('english') || q.includes('iiuc') || q.includes('degree') || q.includes('education') || q.includes('semester')) {
-      return "Tanzirul is an undergraduate student pursuing BA (Honours) in English Language & Literature at IIUC (8th Semester). He also achieved GPA 4.93 in Alim (2021) and GPA 4.81 in Dakhil (2019) at Jameya Ahmadia Sunnia Kamil Madrasah.";
+      return "Tanzirul is an undergraduate student pursuing BA (Honours) in English Language & Literature at IIUC (8th Sem). He also achieved GPA 4.93 in Alim (2021) and GPA 4.81 in Dakhil (2019) at Jameya Ahmadia Sunnia Kamil Madrasah.";
     }
 
     if (q.includes('news') || q.includes('reporter') || q.includes('journalism') || q.includes('khabar') || q.includes('write')) {
